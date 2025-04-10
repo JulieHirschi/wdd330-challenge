@@ -16,8 +16,8 @@ header {
 nav {
     max-width: 700px;
     background-color: #24d0d2;
-    /*padding: 20px;*/
-    margin: 1rem auto;
+    padding: 20px;
+    margin: 10rem auto;
 }
 
 /* small view navigation */
@@ -58,8 +58,8 @@ nav {
 }
 
 .navigation a:hover {
-    background-color: #c75911;
-    color: #022f40;
+    /*background-color: #c75911;*/
+    color: #c75911;
     font-weight: 700;
 }
 
@@ -92,7 +92,7 @@ nav {
 }
 
 .grid-container {
-    background-color: #f7c548;
+    background-color: #ffffff;
 }
 
 .card {
@@ -113,7 +113,7 @@ h1 {
 
 h3 {
     background-color: #125C81;
-    color: #ECFEFE;
+    color: #ffffff;
     font-size: x-large;
 
 }
@@ -145,7 +145,7 @@ img {
     position: absolute;
     top: 30px;
     left: 30px;
-    background: radial-gradient(#fff, #c1c7ca);
+    background: radial-gradient(#fff, #ffffff);
     border: 1px solid #022f40;
     padding: 1.5rem;
     box-shadow: 0 0 3rem #fff;
@@ -181,7 +181,7 @@ img {
 #session li {
     padding: 10px;
     margin: 5px 0;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -202,7 +202,7 @@ img {
 }
 
 footer {
-    background-color: #c75911;
+    background-color: #ffffff;
     padding: 20px;
     text-align: center;
 }
@@ -234,4 +234,96 @@ footer {
 .fa-instagram {
     background: #125688;
     color: white;
+}
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.col-25 {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+}
+
+.col-50 {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+}
+
+.col-75 {
+    -ms-flex: 75%;
+    /* IE10 */
+    flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0 16px;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+span.price {
+    float: right;
+    color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .col-25 {
+        margin-bottom: 20px;
+    }
 }
